@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- Head -->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/static/favicon.ico">
+
+    <title>Gayatri  | {% block title %}Home{% endblock %}</title>
+
+    <!-- based on Carousel Template for Bootstrap -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="/static/build/production.css">
+    <!-- Google fonts https://www.google.com/fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Bitter|Open+Sans|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+    <!-- Add more CSS for individual page here -->
+    {% block extracss %}
+    {% endblock %}
+
+  </head>
+
+  <!-- Body -->
+  <body>
+
+    <!-- NAVBAR
+    ================================================== -->
+
+    <div class="navbar-wrapper" style="min-width: 500px;">
+      <div class="container">
+
+        <nav class="navbar navbar-inverse navbar-static-top ocustom-navy" style="margin-top:15px;">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+	      <!--
+	      <a class="navbar-brand"><img style="max-width:80px;" src="/static/img/decals/lion.80.80.png"></a>
+	      <a class="navbar-brand"><img style="max-width:80px; margin-top: -7px;" src="/static/img/decals/lion.80.80.png"></a>
+	      -->
+	      <a class="navbar-brand" href="/"><img style="max-width:80px; margin-top: -7px;" src="/static/img/decals/antonyfluvirus90.png"></a>
+	      <a class="navbar-brand" href="/" style="color: white;">Rabadan Lab</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="/publications" style="color: white;">Publications</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="color: white;">Research<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/research">Highlights</a></li>
+                    <li><a href="/researchstatement">Statement</a></li>
+                  </ul>
+                </li>
+                <li><a href="/people" style="color: white;">People</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="color: white;">More<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/press">Press</a></li>
+                    <li><a href="/software">Software</a></li>
+                    <li><a href="https://github.com/RabadanLab">Github</a></li>
+                    <li><a href="/courses">Courses</a></li>
+                    <li><a href="/people/alum">Alumni</a></li>
+                    <li><a href="/contact">Map</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" style="color: white;">Links<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+		    <li><a href="http://wiki.c2b2.columbia.edu/systems/index.php/FAQ">C2B2 Wiki</a></li>
+		    <li><a href="https://groups.google.com/forum/#!forum/rabadanlab">Google Group</a></li>
+		    <li><a href="http://wiki.c2b2.columbia.edu/rabadanlab/index.php/Main_Page">Lab Wiki</a></li>
+		    <li><a href="http://wiki.c2b2.columbia.edu/rabadanlab/index.php/Fellowships">Grants & Fellowships</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Header -->
+      <div id="template-header">
+        {% block header %}
+        {% endblock %}
+      </div>
+
+      <!-- START THE FEATURETTES -->
+
+      <!-- Header -->
+      <div id="template-header-2">
+        {% block header2 %}
+        {% endblock %}
+      </div>
+
+      <!-- Content -->
+      <div id="template-content">
+        {% block content %}
+        {% endblock %}
+      </div>
+
+      <!-- /END THE FEATURETTES -->
+
+      <!-- FOOTER -->
+      <footer>
+
+        <hr class="featurette-divider">
+
+	<div class="row">
+          <div class="col-md-4">
+		  <p class="ocustom-footer">&copy; 2015 <a href="/" style="color: black;">The Rabadan Lab</a></p>
+	    <div class="ocustom-footer-small">
+	      Department of Systems Biology<br>
+	      Department of Biomedical Informatics<br>
+	      Columbia University College of Physicians &amp; Surgeons<br>
+	      <br>
+	      ICRC Building 8th Floor, Office 803B<br>
+	      1130 St. Nicholas Ave &middot; New York, NY 10032<br>
+	    </div>
+	    <br>
+          </div>
+          <div class="col-md-4">
+            <a href="https://psoc.c2b2.columbia.edu/"><img src="/static/img/decals/topology.300.42.png" width="250"></a>
+	    <br>
+	    <br>
+            <a href="https://www.dbmi.columbia.edu/"><img src="/static/img/decals/dbmi.280.62.png" width="250"></a>
+	    <br>
+	    <br>
+            <a href="http://www.columbia.edu/"><img style="padding:0px 0px 0px 8px;" src="/static/img/decals/cu.350.49.gif" width="250"></a>
+	    <br>
+	    <br>
+          </div>
+          <div class="col-md-4">
+            <a href="http://systemsbiology.columbia.edu/"><img src="/static/img/decals/cusysbio.265.100.jpg" width="250"></a>
+	    <br>
+	    <br>
+            <a href="http://www.cumc.columbia.edu/"><img src="/static/img/decals/cumc.356.64.png" width="250"></a>
+	    <br>
+	    <br>
+	    <!--
+            <a href="http://www.columbia.edu/"><img src="/static/img/decals/cu.350.49.gif" width="250"></a>
+            <a href="http://www.newyorkpresbyterianhospital.com/"><img src="/static/img/decals/nyp.300.55.png" width="250"></a>
+	    -->
+          </div>
+	</div>
+
+      </footer>
+
+    </div><!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="/static/build/production.min.js"></script>
+
+    <!-- Add more JS for individual page here -->
+    {% block extrajs %}
+    {% endblock %}
+
+  </body>
+
+</html>

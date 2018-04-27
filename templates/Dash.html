@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+<!-- Header -->
+{% block header %}
+
+  <h2>Student Dashboard</h2>
+
+{% endblock %}
+
+<!-- Content -->
+{% block content %}
+
+  <i>Dashboard</i>
+  <br>
+  <br>
+<div class="container">
+   <table class="table">
+	<thead>
+	  <tr>
+		<th>Firstname</th>
+		<th>Lastname</th>
+	  </tr>
+	</thead>
+	 <tbody>
+	  {% for entry in entries %}
+	 <tr>
+	   <td>
+		 {{ entry.Pstatus }}
+	   </td>
+
+	   <td>
+		  <small>{{ entry.Medu}}</small>
+	   </td>
+	 </tr>
+	 </tbody>
+	<br>
+  {% else %}
+	<em>Unbelievable.  No entries here so far</em>
+  {% endfor %}
+   </table>
+  <br>
+  <br>
+</div>
+{% endblock %}

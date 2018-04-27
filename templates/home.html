@@ -1,0 +1,94 @@
+{% extends "layout.html" %}
+
+{% block title %}Home{% endblock %}
+
+<!-- CSS for this specific page -->
+{% block extracss %}
+
+<link rel="stylesheet" href="/static/css/jquery.qtip.css">
+<link rel="stylesheet" href="/static/css/hover.css">
+
+{% endblock %}
+
+<!-- Header -->
+{% block header %}
+
+<br> <br> <br> <br> <br>
+
+{% endblock %}
+
+<!-- Content -->
+{% block content %}
+
+<!-- Three columns of text below the carousel -->
+<div class="row" style="background: url(static/img/IMG_4255.JPG) 50% 0 no-repeat fixed;">
+
+  <div class="row">
+    <div class="col-lg-1"></div>
+    <div class="col-lg-10">
+      <div class="ocustom-frontwelcome" style="color: black; background-color: white">
+        <p class="text-center">Welcome to Gayatri's home page!</p>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="col-lg-1"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-8">
+      <div class="ocustom-frontblurb">
+        <p class="text-center"><small>The amount of high throughput data in biological and clinical systems—from next-generation sequencing experiments to electronic health records—is increasing dramatically, allowing for the development of a quantitative understanding of these complex systems. Our lab is an interdisciplinary team interested in developing mathematical and computational tools to extract useful biological information from large data sets.</small></p>
+      </div>
+      <br>
+      <br>
+    </div>
+    <div class="col-lg-2"></div>
+  </div>
+
+  <div class="col-lg-4">
+    <a class="hvr-float-shadow" href="/publications">
+    <img class="img-circle hasTooltip" src="static/img/Aviary Stock Photo 2.png" alt="image" width="240" height="240">
+    <div class="hidden"> <!-- for qTip ... This class should hide the element, change it if needed -->
+      <h5>A complete listing of publications from Dr. Rabadan and the Rabadan Lab</h5>
+    </div>
+    </a>
+    <h2><a class="ocustom-bitter" href="/Dash">Dashboard</a></h2>
+  </div><!-- /.col-lg-4 -->
+
+  <div class="col-lg-4">
+    <a class="hvr-float-shadow" href="/research">
+    <img class="img-circle hasTooltip" src="static/img/aurora_borealis_9-wallpaper-2560x1440.jpg" alt="image" width="240" height="240">
+    <div class="hidden">
+      <h5>An overview of research in the Oracle Lab</h5>
+    </div>
+    </a>
+    <h2><a class="ocustom-bitter" href="/research">Research</a></h2>
+  </div><!-- /.col-lg-4 -->
+
+  <div class="col-lg-4">
+    <a class="hvr-float-shadow" href="/people">
+    <img class="img-circle hasTooltip" src="static/img/Aviary Stock Photo 2.png" alt="image" width="240" height="240">
+    <div class="hidden">
+      <h5>Information about present and past members of the Rabadan Lab</h5>
+    </div>
+    </a>
+    <h2><a class="ocustom-bitter" href="/people">People</a></h2>
+  </div><!-- /.col-lg-4 -->
+
+</div><!-- /.row -->
+
+{% endblock %}
+
+<!-- JS for this specific page -->
+{% block extrajs %}
+
+<!-- Use Qtip Tool tip bubbles -->
+<script>
+  $(document).ready(function() {
+    useQtips();
+  });
+</script>
+
+{% endblock %}
