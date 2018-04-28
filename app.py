@@ -11,9 +11,8 @@ import platform, sys
 
 app = Flask(__name__)
 
-import pypyodbc
+# import pypyodbc
 
-application = Flask(__name__)
 
 # creating connection Object which will contain SQL Server Connection
 # connection = pypyodbc.connect('Driver={SQL Server};Server=.;Database=Student')  # Creating Cursor
