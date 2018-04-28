@@ -18,13 +18,13 @@ application = Flask(__name__)
 # creating connection Object which will contain SQL Server Connection
 # connection = pypyodbc.connect('Driver={SQL Server};Server=.;Database=Student')  # Creating Cursor
 
-ip = '0.0.0.0'
+ip = '129.157.178.26'
 port = 1521
 SID = 'ORCL'
-service_name = 'servicename'
+service_name = 'PDB1.595583066.oraclecloud.internal'
 dsn_tns = cx_Oracle.makedsn(ip, port, service_name=service_name)
 
-connection = cx_Oracle.connect(user="username", password="****", dsn=dsn_tns)
+connection = cx_Oracle.connect(user="GAYATRI", password="PANEERTIKKA", dsn=dsn_tns)
 
 
 cursor = connection.cursor()
